@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TranslationsManager .report() prints the report to the console 1`] = `
+Array [
+  "📄 [1m[4m[33mtest/tmp/translations/en.json[39m[24m[22m:
+(+) Added:
+  [32mtitle[39m: [32mApp title[39m
+  [32mlink.home[39m: [32mHome[39m
+  [32mlink.about[39m: [32mAbout[39m
+(-) Removed:
+  [31mmessage_3[39m: [31mMessage three[39m
+  [31mmessage_4[39m: [31mMessage four[39m
+",
+]
+`;
+
+exports[`TranslationsManager .writeFiles() keeps translations untouched 1`] = `
+Object {
+  "message_3": "Message three",
+  "message_4": "Message four",
+}
+`;
+
+exports[`TranslationsManager .writeFiles() keeps translations untouched 2`] = `
+Object {
+  "message_3": "Nachricht drei",
+  "message_4": "Nachricht vier",
+}
+`;
+
+exports[`TranslationsManager .writeFiles() updates translation files 1`] = `
+Object {
+  "message_3": "Message 3",
+  "message_4": "Message 4",
+}
+`;
+
+exports[`TranslationsManager .writeFiles() updates translation files 2`] = `
+Object {
+  "message_3": "Message 3",
+  "message_4": "Message 4",
+}
+`;
+
+exports[`TranslationsManager .writeFiles() writes translation files 1`] = `
+Object {
+  "message_1": "Message 1",
+  "message_2": "Message 2",
+  "message_3": "Message 3",
+}
+`;
+
+exports[`TranslationsManager .writeFiles() writes translation files 2`] = `
+Object {
+  "message_1": "Message 1",
+  "message_2": "Message 2",
+  "message_3": "Message 3",
+}
+`;
+
+exports[`TranslationsManager options validation reads messages from json files in \`messagesDir\` 1`] = `
+Object {
+  "link.about": "About",
+  "link.home": "Home",
+  "title": "App title",
+}
+`;

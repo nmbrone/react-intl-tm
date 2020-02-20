@@ -1,0 +1,28 @@
+{
+  "name": "react-intl-tm",
+  "version": "0.1.0",
+  "description": "Translations manager for react-intl",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmbrone/react-intl-tm.git"
+  },
+  "author": "Sergey Snozyk <sergey.snozyk@gmail.com> (https://github.com/nmbrone)",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "chalk": "^3.0.0",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.8.3",
+    "babel-plugin-react-intl": "^5.1.18",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-intl": "^3.12.0"
+  }
+}

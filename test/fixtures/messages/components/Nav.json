@@ -1,0 +1,10 @@
+[
+  {
+    "id": "link.home",
+    "defaultMessage": "Home"
+  },
+  {
+    "id": "link.about",
+    "defaultMessage": "About"
+  }
+]
