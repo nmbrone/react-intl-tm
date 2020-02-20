@@ -1,7 +1,7 @@
-name: Test
+name: Tests
 on: 'push'
 jobs:
-  test:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -18,3 +18,5 @@ jobs:
         run: yarn install
       - name: Run Tests
         run: yarn test
+        env:
+          FORCE_COLOR: 1 # force chalk to output colors
