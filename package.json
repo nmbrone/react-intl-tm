@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Translations manager for react-intl",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nmbrone/react-intl-tm.git"
