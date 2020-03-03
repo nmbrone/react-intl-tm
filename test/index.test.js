@@ -111,15 +111,19 @@ describe('TranslationsManager', () => {
     test('prints the report to the console', () => {
       console.log = jest.fn();
 
-      new TranslationsManager({
+      const tm = new TranslationsManager({
         messagesDir: 'test/fixtures/messages',
         locales: ['en', 'de'],
         defaultLocale: 'en',
         translationsDir,
-      }).report();
+      });
 
+      tm.report();
       expect(console.log).toHaveBeenCalledTimes(2);
       expect(console.log.mock.calls[0]).toMatchSnapshot();
+
+      tm.report({ short: true });
+      expect(console.log.mock.calls[2]).toMatchSnapshot();
     });
   });
 });
