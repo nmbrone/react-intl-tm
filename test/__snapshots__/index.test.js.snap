@@ -16,8 +16,7 @@ Array [
 
 exports[`TranslationsManager .report() prints the report to the console 2`] = `
 Array [
-  "📄 [1m[4m[33mtest/tmp/translations/en.json[39m[24m[22m: (3 added, 2 removed)
-",
+  "📄 [1m[4m[33mtest/tmp/translations/en.json[39m[24m[22m: (3 added, 2 removed)",
 ]
 `;
 
