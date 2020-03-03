@@ -43,8 +43,8 @@ Object {
 
 exports[`TranslationsManager .writeFiles() updates translation files 2`] = `
 Object {
-  "message_3": "Message 3",
-  "message_4": "Message 4",
+  "message_3": "",
+  "message_4": "",
 }
 `;
 
@@ -58,9 +58,9 @@ Object {
 
 exports[`TranslationsManager .writeFiles() writes translation files 2`] = `
 Object {
-  "message_1": "Message 1",
-  "message_2": "Message 2",
-  "message_3": "Message 3",
+  "message_1": "",
+  "message_2": "",
+  "message_3": "",
 }
 `;
 

@@ -39,7 +39,7 @@ describe('TranslationsManager', () => {
       );
 
       expect(() => new TranslationsManager({ messages: [] })).toThrowErrorMatchingInlineSnapshot(
-        `"\\"translationsDir\\" is required"`
+        `"Please provide \\"translationsDir\\" option"`
       );
     });
 
@@ -109,6 +109,7 @@ describe('TranslationsManager', () => {
 
   describe('.report()', () => {
     test('prints the report to the console', () => {
+      const log = console.log;
       console.log = jest.fn();
 
       const tm = new TranslationsManager({
@@ -124,6 +125,7 @@ describe('TranslationsManager', () => {
 
       tm.report({ short: true });
       expect(console.log.mock.calls[2]).toMatchSnapshot();
+      console.log = log;
     });
   });
 });
