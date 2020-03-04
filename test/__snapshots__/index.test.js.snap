@@ -4,12 +4,12 @@ exports[`TranslationsManager .report() prints the report to the console 1`] = `
 Array [
   "📄 [1m[4m[33mtest/tmp/translations/en.json[39m[24m[22m: (3 added, 2 removed)
 (+) Added:
-  [32mtitle[39m: [32mApp title[39m
-  [32mlink.home[39m: [32mHome[39m
-  [32mlink.about[39m: [32mAbout[39m
+  [32mtitle[39m: [90mApp title[39m
+  [32mlink.home[39m: [90mHome[39m
+  [32mlink.about[39m: [90mAbout[39m
 (-) Removed:
-  [31mmessage_3[39m: [31mMessage three[39m
-  [31mmessage_4[39m: [31mMessage four[39m
+  [31mmessage_3[39m: [90mMessage three[39m
+  [31mmessage_4[39m: [90mMessage four[39m
 ",
 ]
 `;
