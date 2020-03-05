@@ -12,7 +12,7 @@ npm i --save-dev react-intl-tm
 
 ### Usage examples
 
-#### Read messages from folder
+#### Read messages from a folder
 
 ```javascript
 const Manager = require('react-intl-tm');
@@ -85,15 +85,15 @@ new Manager({
 
 ### Options
 
-- `source` - Path (glob) to source files.
-- `messages` - Array of the messages extracted by `babel-plugin-react-intl`.
-- `messagesDir` - Path to directory with messages extracted by `babel-plugin-react-intl`.
-- `translationsDir` - Path to directory with translations files.
-- `locales` - Array of locales to maintain.
-- `defaultLocale` - Default locale.
+- `source` - path (glob) to source files.
+- `messages` - an array of messages extracted by `babel-plugin-react-intl`.
+- `messagesDir` - path to directory with messages extracted by `babel-plugin-react-intl`.
+- `translationsDir` - path to directory with translation files.
+- `locales` - an array of locales to maintain.
+- `defaultLocale` - default locale.
 
 ### API
 
-- `writeFiles()` - Write translations files to `translationsDir`.
-- `report()` - Print the full report to the console. When called with `{short: true}` option, the report will not include added, removed, and untranslated keys.  
-- `results()` - Returns the raw result of the manager's work. It can be used for building tools on top of this module.  
+- `writeFiles()` - write translations files to `translationsDir`.
+- `report()` - print the full report to the console. When called with `{short: true}` option, the report will not include added, removed, and untranslated keys.  
+- `results()` - returns the raw result of translations manager work.
